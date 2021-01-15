@@ -1,0 +1,247 @@
+﻿@model Banglabazaar.Web.HomeViewModel.CategorySearchViewModel
+@{
+    ViewBag.Title = "veiw";
+}
+<form method="post">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                <label>Search</label>
+                <input type="search" class="form-control" id="searchtxt" name="search"  value="@Model.SearchTerm"/>
+
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="form-group">
+                <label>Action</label>
+                <div class="row">
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-primary form-control" id="Searchbtn">Search</button>
+                    </div>
+                    <div class="col-md-6">
+                        <button type="button" class="btn btn-primary form-control" id="newbtn">New</button>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+
+
+</form> 
+<div>
+    <table class="table table-striped">
+        <tbody>
+            <tr>
+                <td>Category Name</td>
+              
+                <td>Products</td>
+                <td>Action</td>
+            </tr>
+            @foreach (var category in Model.Categories)
+            {
+                <tr>
+                    <td>@category.Name</td>
+                   
+                   
+                    <td>@if (category.Products != null)
+                    {
+                      @category.Products.Where(x=>x.IsActive==true).Count()
+                    }
+                    else
+                    {
+                        <text>-</text>
+}
+                        </td>
+
+                    <td>
+                        <button class="editbtn" data-id="@category.ID">Edit</button>
+                        <button class="deletebtn" data-id="@category.ID">Delete</button>
+                    </td>
+                   
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <div>
+       
+        @if (Model.Pager != null)
+        {
+
+            if (Model.Pager.CurrentPage > 1)
+            {
+                <button class="pagebutton"  data-pageNo="1" >First</button>
+                <button class="pagebutton" data-pageNo="@(Model.Pager.CurrentPage -1)" >Previous</button>
+
+            }
+
+            for (var page = Model.Pager.StartPage; page <= Model.Pager.EndPage; page++)
+            {
+                string activeclass = Model.Pager.CurrentPage == page ? "active bg-info" : string.Empty;
+                <button class="@activeclass pagebutton" data-pageNo="@page">@page</button>
+            }
+
+
+            if (Model.Pager.CurrentPage < Model.Pager.TotalPages)
+            {
+                <button class="pagebutton" data-pageNo="@(Model.Pager.CurrentPage +1)" >Next</button>
+                <button class="pagebutton" data-pageNo="@Model.Pager.EndPage" >Last</button>
+               
+            }
+
+
+
+        }
+
+
+
+    </div>
+</div>
+
+
+
+<script>
+
+    $(".pagebutton").click(function () {
+
+
+        $.ajax({
+            url: '@Url.Action("categorytable","Create")',
+            data: {
+
+                pageNo: $(this).attr("data-pageNo"),
+                search: '@Model.SearchTerm'
+
+            }
+        }).done(function (response) {
+            $("#tablecontainer").html(response);
+           
+        }).fail(function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("Failed");
+        });
+    });
+
+
+    $("#Searchbtn").click(function () {
+        var value = $("#searchtxt").val();
+       
+        $.ajax({
+            url: '@Url.Action("categorytable","Create")',
+            data: {
+                search : value
+            }
+        }).done(function (response) {
+            $("#tablecontainer").html(response);
+        }).fail(function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("Failed");
+        });
+    });
+
+    $("#newbtn").click(function () {
+
+
+        $.ajax({
+
+            url: '@Url.Action("Create","Create")',
+
+        }).done(function (response) {
+            $("#actioncontainer").html(response);
+            focusAction("actioncontainer");
+        }).fail(function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("Failed");
+        });
+    });
+
+    $(".editbtn").click(function () {
+
+
+        $.ajax({
+            type: 'GET',
+            url: '@Url.Action("edit","Create")',
+            data: {
+                ID: $(this).attr('data-id')
+            }
+
+
+        }).done(function (response) {
+            $("#actioncontainer").html(response);
+            focusAction("actioncontainer");
+        }).fail(function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("Failed");
+        });
+    });
+
+
+    $(".deletebtn").click(function () {
+
+        swal({
+            title: "Confirm?",
+            text: "Are you sure you want to delete?",
+            icon: "warning",
+            buttons: true,
+            dangerMode: true,
+        })
+         .then((willDelete) => {
+             if (willDelete) {
+
+
+                 $.ajax({
+                     type: 'POST',
+                     url:'@Url.Action("delete", "Create")',
+                     data: {
+                         ID: $(this).attr('data-id')
+                     }
+
+
+                 }).done(function (response) {
+                     $("#tablecontainer").html(response);
+                     $("#actioncontainer").html("");
+
+                     swal("Record Delete Successfully.", {
+                         icon: "success",
+                     });
+                 }).fail(function (XMLHttpRequest, textStatus, errorThrown) {
+                     alert("Failed");
+                 });
+
+             }
+         });
+    });
+
+
+    @*$(".deletebtn").click(function () {
+
+        var confirmdelete = confirm("Are you sure you want to delete?");
+        if (confirmdelete) {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("delete","Create")',
+                data: {
+                    ID: $(this).attr('data-id')
+                }
+
+
+            }).done(function (response) {
+                $("#tablecontainer").html(response);
+                $("#actioncontainer").html("");
+            }).fail(function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("Failed");
+            });
+        }
+
+    });*@
+
+    //function focusAction() {
+    //    $('html, body').animate({
+    //        scrollTop: $("#actioncontainer").offset().top - 100
+    //    }, 1000);
+
+    //}
+   
+</script>

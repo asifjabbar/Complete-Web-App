@@ -1,0 +1,31 @@
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\Banglabazaar.Services.dll.config
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\Banglabazaar.Services.dll
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\Banglabazaar.Services.pdb
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\Bangalabazaar_Entities.dll
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\Banglabazaar.Database.dll
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\EntityFramework.dll
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\Bangalabazaar_Entities.pdb
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\Banglabazaar.Database.pdb
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\EntityFramework.xml
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Services\obj\Debug\Banglabazaar.Services.csprojResolveAssemblyReference.cache
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Services\obj\Debug\Banglabazaar.Services.dll
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Services\obj\Debug\Banglabazaar.Services.pdb
+F:\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\Banglabazaar.Services.dll.config
+F:\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\Banglabazaar.Services.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\Banglabazaar.Services.pdb
+F:\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\Bangalabazaar_Entities.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\Banglabazaar.Database.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\EntityFramework.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\EntityFramework.SqlServer.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\Bangalabazaar_Entities.pdb
+F:\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\Banglabazaar.Database.pdb
+F:\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\Banglabazaar.Database.dll.config
+F:\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\EntityFramework.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Services\bin\Debug\EntityFramework.SqlServer.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Services\obj\Debug\Banglabazaar.Services.csprojAssemblyReference.cache
+F:\Projects\Bangla_Bazaar\Banglabazaar.Services\obj\Debug\Banglabazaar.Services.csproj.CoreCompileInputs.cache
+F:\Projects\Bangla_Bazaar\Banglabazaar.Services\obj\Debug\Banglabazaar.Services.csproj.CopyComplete
+F:\Projects\Bangla_Bazaar\Banglabazaar.Services\obj\Debug\Banglabazaar.Services.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Services\obj\Debug\Banglabazaar.Services.pdb

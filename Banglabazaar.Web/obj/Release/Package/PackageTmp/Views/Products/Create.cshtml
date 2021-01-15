@@ -1,0 +1,201 @@
+﻿@model List<Bangalabazaar_Entities.Category>
+@{
+    ViewBag.Title = "Create";
+}
+
+<h2>Create Product</h2>
+
+
+<form id="createproduct">
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                <label>Name <span class="text-danger">*</span></label>
+                <input type="text" name="Name" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                <input type="text" name="Description" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Price <span class="text-danger">*</span></label>
+                <input type="text" name="Price" class="form-control" />
+            </div>
+            <div class="form-group">
+                <label>Image</label>
+                <input id="ImageURL" name="ImageURL" type="hidden" />
+                <input class="form-control" id="imageupload" name="image" type="file" accept=".png, .jpg" />
+
+            </div>
+            <div class="form-group">
+                <label>Category : </label>
+                <select class="form-control" name="CategoryID">
+                    @foreach (var category in Model)
+            {
+                        <option value="@category.ID">@category.Name</option>
+                    }
+
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <text class="text-danger">Image Size Must Be 286x250px</text>
+            <div class="thumb">
+                <img class="img-thumbnail img-fluid" id="imageview" name="imageview" />
+            </div>
+        </div>
+    </div>
+    <button type="button" class="btn btn-primary" id="savebtn">Create</button>
+    <button type="button" class="btn btn-primary" id="cancelbtn">Cancel</button>
+
+
+    @*<div class="form-group">
+        <label>Name : </label>
+        <input type="text" class="form-control" name="Name" />
+        
+    </div>
+    <div class="form-group">
+        <label>Category : </label>
+        <select class="form-control" name="CategoryID">
+            @foreach (var category in Model)
+            {
+                <option value="@category.ID">@category.Name</option>
+            }
+
+        </select>
+       
+    </div>
+    <div class="form-group">
+        <label>Description :</label>
+        <input type="text" name="Description" class="form-control" />
+       
+    </div>
+    <div class="form-group">
+        <label>Price :</label>
+        <input type="text" name="Price" class="form-control" />
+
+    </div>
+    <button type="button" class="btn btn-primary" id="savebtn">Create</button>*@
+  
+</form>
+
+   
+<script>
+
+
+    $("#createproduct").validate({
+        rules: {
+            Name: {
+                required: true,
+                minlength: 5,
+                maxlength: 50
+
+            },
+            Description: {
+
+                maxlength: 500
+            },
+            Price: {
+                required: true,
+                range: [1, 100000]
+            }
+        },
+        messages: {
+            Name: {
+                required: 'Name is Required',
+                minlength: 'Minimum length is 5',
+                maxlength: 'Maximum length is 50'
+
+            },
+            Description: {
+
+                maxlength: 'Maximum length is 500'
+            },
+            Price: {
+                required: 'Price is Required',
+                range: 'Price Must be Within 1 - 100000'
+
+            }
+
+        }
+    });
+
+
+    $("#imageupload").change(function () {
+
+        var element = this;
+        var formData = new FormData();
+        var totalfiles = element.files.length;
+        for (var i = 0 ; i < totalfiles; i++) {
+            var file = element.files[i];
+            formData.append("Photo", file);
+        }
+
+
+        $.ajax({
+            type: 'POST',
+            url: '@Url.Action("uploadimage", "Shared")',
+            data: formData,
+            dataType: 'json',
+            contentType: false,
+            processData: false
+
+        }).done(function (response) {
+            debugger;
+            console.log(response);
+            if (response.Success) {
+                $("#imageview").attr("src", response.ImageURL)
+                $("#ImageURL").val(response.ImageURL)
+            }
+
+        }).fail(function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("Failed");
+        });
+
+    });
+
+
+    $("#savebtn").click(function () {
+        if ($("#createproduct").valid()) {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("Create","Products")',
+                data: $("#createproduct").serialize()
+
+            }).done(function (response) {
+                $("#tablecontainer").html(response);
+                $("#actioncontainer").html("");
+                focusAction("tablecontainer");
+
+            }).fail(function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("Failed");
+            });
+        }
+        else {
+
+            swal({
+                title: "Warning",
+                text: "Please Enter all required field",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true
+            });
+        }
+    });
+
+    $("#cancelbtn").click(function () {
+        $.ajax({
+            type: 'GET',
+            url: '/Products/producttable',
+
+
+        }).done(function (response) {
+            $("#tablecontainer").html(response);
+            $("#actioncontainer").html("");
+            focusAction("tablecontainer");
+
+        }).fail(function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("Failed");
+        });
+    });
+</script>

@@ -1,0 +1,184 @@
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\ApplicationInsights.config
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\csc.exe
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\vbc.exe
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\VBCSCompiler.exe
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Banglabazaar.Web.dll.config
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Banglabazaar.Web.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Banglabazaar.Web.pdb
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Antlr3.Runtime.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Bangalabazaar_Entities.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Banglabazaar.Database.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Banglabazaar.Services.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\EntityFramework.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.Web.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.ApplicationInsights.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AspNet.Identity.Core.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.Cookies.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.Facebook.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.Google.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.OAuth.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.Twitter.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Newtonsoft.Json.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Owin.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.Helpers.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.Mvc.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.Optimization.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.Razor.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.WebPages.Deployment.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.WebPages.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.WebPages.Razor.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\WebGrease.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Bangalabazaar_Entities.pdb
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Banglabazaar.Database.pdb
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Banglabazaar.Services.pdb
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.Web.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.ApplicationInsights.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.Helpers.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.Mvc.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.Optimization.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.Razor.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.WebPages.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.WebPages.Deployment.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.WebPages.Razor.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Antlr3.Runtime.pdb
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Newtonsoft.Json.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\EntityFramework.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\EntityFramework.SqlServer.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AspNet.Identity.Core.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.Facebook.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.Cookies.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.OAuth.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.Google.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.Twitter.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\obj\Release\Banglabazaar.Web.csprojResolveAssemblyReference.cache
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\obj\Release\Banglabazaar.Web.Migrations.Addednewproperties.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\obj\Release\Banglabazaar.Web.csproj.GenerateResource.Cache
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\obj\Release\Banglabazaar.Web.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Web\obj\Release\Banglabazaar.Web.pdb
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\ApplicationInsights.config
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\csc.exe
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\Microsoft.CodeAnalysis.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\Microsoft.CSharp.Core.targets
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\Microsoft.VisualBasic.Core.targets
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\System.Collections.Immutable.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\System.Reflection.Metadata.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\vbc.exe
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\VBCSCompiler.exe
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\roslyn\VBCSCompiler.exe.config
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Banglabazaar.Web.dll.config
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Banglabazaar.Web.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Banglabazaar.Web.pdb
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Antlr3.Runtime.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Bangalabazaar_Entities.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Banglabazaar.Database.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Banglabazaar.Services.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\EntityFramework.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\EntityFramework.SqlServer.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.Agent.Intercept.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.DependencyCollector.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.PerfCounterCollector.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.ServerTelemetryChannel.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.Web.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.WindowsServer.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.ApplicationInsights.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AspNet.Identity.Core.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AspNet.Identity.EntityFramework.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AspNet.Identity.Owin.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Host.SystemWeb.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.Cookies.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.Facebook.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.Google.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.OAuth.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.Twitter.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Web.Infrastructure.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Newtonsoft.Json.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Owin.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.Helpers.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.Mvc.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.Optimization.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.Razor.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.WebPages.Deployment.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.WebPages.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.WebPages.Razor.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\WebGrease.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Bangalabazaar_Entities.pdb
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Banglabazaar.Database.pdb
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Banglabazaar.Database.dll.config
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Banglabazaar.Services.pdb
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Banglabazaar.Services.dll.config
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.DependencyCollector.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.ServerTelemetryChannel.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.Web.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AI.WindowsServer.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.ApplicationInsights.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.Helpers.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.Mvc.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.Optimization.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.Razor.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.WebPages.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.WebPages.Deployment.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\System.Web.WebPages.Razor.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Antlr3.Runtime.pdb
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Newtonsoft.Json.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\EntityFramework.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\EntityFramework.SqlServer.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AspNet.Identity.Core.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AspNet.Identity.Owin.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.AspNet.Identity.EntityFramework.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Host.SystemWeb.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.Facebook.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.Cookies.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.OAuth.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.Google.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.Twitter.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\obj\Release\Banglabazaar.Web.csprojAssemblyReference.cache
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\obj\Release\Banglabazaar.Web.Migrations.Addednewproperties.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\obj\Release\Banglabazaar.Web.csproj.GenerateResource.cache
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\obj\Release\Banglabazaar.Web.csproj.CoreCompileInputs.cache
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\obj\Release\Banglabazaar.Web.csproj.CopyComplete
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\obj\Release\Banglabazaar.Web.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Web\obj\Release\Banglabazaar.Web.pdb

@@ -1,0 +1,24 @@
+﻿@model Bangalabazaar_Entities.Category
+@{
+    ViewBag.Title = "delete";
+}
+<h2>delete</h2>
+
+
+
+
+
+    @using (Html.BeginForm("delete", "Create", FormMethod.Post))
+    { 
+         <input type="text"  value="@Model.ID" />
+    <input type="text"  value="@Model.Name" />
+    <br />
+    <input type="text"  value="@Model.Description" />
+    <div>Are you sure want to delete??</div>
+    <input type="submit" value="Delete" />
+
+    }
+  
+
+
+

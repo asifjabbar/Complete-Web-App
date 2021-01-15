@@ -1,0 +1,42 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.1/jquery.validate.min.js"></script>
+<br />
+<div class="row">
+    <div class="col-md-12">
+        <div class="title-section">
+            <h2 class="title">
+                CATEGORY SECTION
+            </h2>
+        </div><!-- /.title-section -->
+    </div><!-- /.col-md-12 -->
+</div>
+<div class="container">
+    <div id="tablecontainer">
+        @{ 
+            Html.RenderAction("categorytable","Create");
+        }
+
+    </div>
+    <hr />
+    <div id="actioncontainer">
+
+    </div>
+
+</div>
+
+<script>
+
+    function focusAction(controlToFocus) {
+        $('html, body').animate({
+            scrollTop: $("#" + controlToFocus).offset().top - 100
+        }, 1000);
+
+    }
+
+</script>
+

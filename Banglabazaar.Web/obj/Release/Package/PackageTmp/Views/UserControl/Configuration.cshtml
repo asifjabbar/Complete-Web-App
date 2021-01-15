@@ -1,0 +1,65 @@
+﻿@model Banglabazaar.Web.HomeViewModel.configviewmodel
+<br />
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="title-section">
+            <h2 class="title">
+                CONFIGURATION
+            </h2>
+        </div><!-- /.title-section -->
+    </div><!-- /.col-md-12 -->
+</div>
+
+<div class="container">
+    <div id="tablecontainer">
+        <table class="table table-striped" id="ProductsTable">
+            <thead>
+                <tr>
+                    <th class="wrap-td font-weight-bold">Config Key</th>
+                    <th class="wrap-td font-weight-bold">Value</th>
+                  
+                    <th class="wrap-td font-weight-bold">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @if (Model != null)
+            {
+                foreach (var Config in Model.Config)
+                {
+                        <tr>
+                            <td>@Config.Key</td>
+                      
+                            <td>@Config.Value</td>
+                            <td>
+                                <button class="editbtn" onclick="location.href='@Url.Action("Configurationupdate","UserControl",new { key=Config.Key})'">Update</button>
+                              
+                            </td>
+                        </tr>
+                    }
+
+                }
+                else
+                {
+                    <tr>
+                        <td class="text-danger" colspan="4"> <text>No Products</text></td>
+                    </tr>
+                }
+
+
+
+
+            </tbody>
+
+
+        </table>
+
+
+    </div>
+
+    <div id="actioncontainer"></div>
+
+</div>
+
+
+

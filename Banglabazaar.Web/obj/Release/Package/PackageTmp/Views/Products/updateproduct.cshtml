@@ -1,0 +1,229 @@
+﻿@model Banglabazaar.Web.HomeViewModel.bothviewmodel
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Update Product</h2>
+<form id="editproduct">
+
+    <div class="row">
+        <div class="col-md-8">
+            <div class="form-group">
+                <input type="hidden" name="ID" value="@Model.Products.ID" />
+                <label>Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="Name" value="@Model.Products.Name" />
+
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                <input type="text" class="form-control" name="Description" value="@Model.Products.Description" />
+
+            </div>
+            <div class="form-group">
+                <label>Category : </label>
+                <select class="form-control" name="CategoryID">
+                    @foreach (var category in Model.Categories)
+            {
+                        <option value="@category.ID">@category.Name</option>
+                    }
+
+                </select>
+
+            </div>
+
+            <div class="form-group">
+                <label>Price</label>
+                <input type="text" class="form-control" name="Price" value="@Model.Products.Price" />
+
+            </div>
+
+            <div class="form-group">
+                <label>Image</label>
+                <input id="ImageURL" name="ImageURL" type="hidden" value="@Model.Products.ImageURL"/>
+                <input class="form-control" id="imageupload" name="image" type="file" accept=".png, .jpg" />
+
+            </div>
+       
+        </div>
+        <div class="col-md-4">
+            <div class="thumb">
+                <img class="img-thumbnail img-fluid" id="imageview" name="imageview" src="@Model.Products.ImageURL" />
+            </div>
+        </div>
+    </div>
+
+    <button type="button" id="updatebtn">Save</button>
+    <button type="button" id="cancelbtn">Cancel</button>
+
+
+    @*<div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <input type="hidden" name="ID" value="@Model.Products.ID" />
+                <label>Name <span class="text-danger">*</span></label>
+                <input type="text" class="form-control" name="Name" value="@Model.Products.Name" />
+
+            </div>
+            <div class="form-group">
+                <label>Description</label>
+                <input type="text" class="form-control" name="Description" value="@Model.Products.Description" />
+
+
+            </div>
+            <div class="form-group">
+                <label>Category : </label>
+                <select class="form-control" name="CategoryID">
+                    @foreach (var category in Model.Categories)
+            {
+                        <option value="@category.ID">@category.Name</option>
+                    }
+
+                </select>
+
+            </div>
+          
+            <div class="form-group">
+                <label>Price</label>
+                <input type="text" class="form-control" name="Price" value="@Model.Products.Price" />
+
+            </div>
+          
+     
+        </div>
+     
+    </div>
+    <button type="button" id="updatebtn">Save</button>*@
+
+</form>
+@*<form id="editproduct">
+    <input type="hidden" name="ID" value="@Model.Products.ID"/>
+    <label>Name : </label>
+    <input  name="Name" value="@Model.Products.Name" />
+    <br />
+    <label>Description :</label>
+    <input  name="Description" value="@Model.Products.Description"/>
+    <br />
+    <label>Price :</label>
+    <input  name="Price" value="@Model.Products.Price"/>
+    <br />
+    <button type="button" id="updatebtn">Update</button>
+
+
+</form>*@
+
+<script>
+
+    $("#editproduct").validate({
+        rules: {
+            Name: {
+                required: true,
+                minlength: 5,
+                maxlength: 50
+
+            },
+            Description: {
+
+                maxlength: 500
+            },
+            Price: {
+                required: true,
+                range: [1, 100000]
+            }
+        },
+        messages: {
+            Name: {
+                required: 'Name is Required',
+                minlength: 'Minimum length is 5',
+                maxlength: 'Maximum length is 50'
+
+            },
+            Description: {
+
+                maxlength: 'Maximum length is 500'
+            },
+            Price: {
+                required: 'Price is Required',
+                range: 'Price Must be Within 1 - 100000'
+
+            }
+
+        }
+    });
+
+    $("#imageupload").change(function () {
+        debugger;
+        var element = this;
+        var formData = new FormData();
+        var totalfiles = element.files.length;
+        for (var i = 0 ; i < totalfiles; i++) {
+            var file = element.files[i];
+            formData.append("Photo", file);
+        }
+
+
+        $.ajax({
+            type: 'POST',
+            url: '/Shared/uploadimage',
+            data: formData,
+            dataType: 'json',
+            contentType: false,
+            processData: false
+
+        }).done(function (response) {
+            debugger;
+            console.log(response);
+            if (response.Success) {
+                $("#imageview").attr("src", response.ImageURL)
+                $("#ImageURL").val(response.ImageURL)
+            }
+
+        }).fail(function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("Failed");
+        });
+
+    });
+
+
+    $("#updatebtn").click(function () {
+        if ($("#editproduct").valid()) {
+            $.ajax({
+                type: 'POST',
+                url: '@Url.Action("updatedproduct","Products")',
+                data: $("#editproduct").serialize()
+
+            }).done(function (response) {
+                $("#tablecontainer").html(response);
+                $("#actioncontainer").html("");
+                focusAction("ProductsTable");
+
+            }).fail(function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("Failed");
+            });
+        } else {
+
+            swal({
+                title: "Warning",
+                text: "Please Enter all required field",
+                icon: "warning",
+                buttons: true,
+                dangerMode: true
+            });
+        }
+    });
+    $("#cancelbtn").click(function () {
+        $.ajax({
+            type: 'GET',
+            url: '/Products/producttable',
+
+
+        }).done(function (response) {
+            $("#tablecontainer").html(response);
+            $("#actioncontainer").html("");
+            focusAction("tablecontainer");
+
+        }).fail(function (XMLHttpRequest, textStatus, errorThrown) {
+            alert("Failed");
+        });
+    });
+</script>

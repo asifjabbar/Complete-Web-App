@@ -1,0 +1,66 @@
+﻿@model Banglabazaar.Web.HomeViewModel.configviewlModel
+
+
+@*<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Configurationupdate</title>
+</head>
+<body>
+    <div> 
+     
+          <input type="text" value="@Model.Config.Key" name="Key"/>
+          <input type="text" value="@Model.Config.Value" name="Value" />
+          <button type="submit">Save</button>
+   
+    </div>
+</body>
+</html>*@
+
+<form method="post">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <section id="loginForm">
+                    <br />
+                    <br />
+                    <h4>Configuration Update</h4>
+
+                    <hr />
+
+                    <div class="form-group">
+                        <label>Config Key</label>
+                        <div class="col-md-10">
+                            <input type="text" value="@Model.Config.Key" name="Key" class="form-control" disabled="disabled" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label>Config Value</label>
+                        <div class="col-md-10">
+                            <input type="text" value="@Model.Config.Value" name="Value" class="form-control" />
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-offset-2 col-md-10">
+                            <button type="submit">Save</button>
+                        </div>
+                    </div>
+
+                    @* Enable this once you have account confirmation enabled for password reset functionality
+                        <p>
+                            @Html.ActionLink("Forgot your password?", "ForgotPassword")
+                        </p>*@
+
+                </section>
+            </div>
+            <div class="col-md-4">
+                <section id="socialLoginForm"></section>
+            </div>
+        </div>
+
+    </div>
+
+</form>

@@ -1,0 +1,12 @@
+﻿@model Bangalabazaar_Entities.Product
+
+@{
+    ViewBag.Title = "delete";
+}
+
+<h2>Delete Product</h2>
+<h3>Are you sure u want to delete?</h3>
+<form method="post">
+    <input type="hidden" name="ID" value="@Model.ID" />
+    <input type="submit" value="Delete" />
+</form>

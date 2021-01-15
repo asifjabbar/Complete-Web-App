@@ -1,0 +1,66 @@
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\Banglabazaar.Database.dll.config
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\Banglabazaar.Database.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\Banglabazaar.Database.pdb
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\Bangalabazaar_Entities.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\EntityFramework.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\Bangalabazaar_Entities.pdb
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\EntityFramework.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.csprojResolveAssemblyReference.cache
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.Initialized.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.ImageURLAdded.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addedisfeatured.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.configtable.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.relationadded.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.productimageURL.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.validation.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.tablesadded.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addedqtyinorderitem.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.sliderimagetableadded.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addprice.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.deletetable.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addedisactive.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addedcatisactive.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.csproj.GenerateResource.Cache
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.pdb
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addedcontact.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addedcontacts.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addedcontactsno.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addedcontactsno1.resources
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.usernameadded.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\Banglabazaar.Database.dll.config
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\Banglabazaar.Database.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\Banglabazaar.Database.pdb
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\Bangalabazaar_Entities.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\EntityFramework.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\EntityFramework.SqlServer.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\Bangalabazaar_Entities.pdb
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\EntityFramework.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\bin\Release\EntityFramework.SqlServer.xml
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.csprojAssemblyReference.cache
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.Initialized.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.ImageURLAdded.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addedisfeatured.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.configtable.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.relationadded.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.productimageURL.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.validation.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.tablesadded.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addedqtyinorderitem.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.sliderimagetableadded.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addprice.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.deletetable.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addedisactive.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addedcatisactive.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addedcontact.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addedcontacts.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addedcontactsno.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.addedcontactsno1.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.Migrations.usernameadded.resources
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.csproj.GenerateResource.cache
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.csproj.CoreCompileInputs.cache
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.csproj.CopyComplete
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.dll
+F:\Projects\Bangla_Bazaar\Banglabazaar.Database\obj\Release\Banglabazaar.Database.pdb

@@ -1,0 +1,138 @@
+﻿@model Banglabazaar.Web.HomeViewModel.FilterProductviewmodel
+@{
+
+    var defaultimage = "~/Content/noimage.jpg";
+}
+
+<div class="filter-shop clearfix">
+    <p class="showing-product float-right">
+        @if (Model.Products.Count > 0) {
+
+            <text>Showing @(((Model.Pager.CurrentPage -1)*Model.Pager.PageSize)+1)–@(((Model.Pager.CurrentPage - 1) * Model.Pager.PageSize) + (Model.Products.Count < Model.Pager.PageSize ? Model.Products.Count : Model.Pager.PageSize)) of @Model.Pager.TotalItems Products</text>
+}  </p>
+
+</div><!-- /.filte-shop -->
+
+ 
+<div class="product-content product-threecolumn product-slidebar clearfix">
+@if (Model.Products.Count>0) { 
+    <ul class="product style2 sd1">
+        @foreach (var product in Model.Products)
+        {
+            var ImageURL = string.IsNullOrEmpty(product.ImageURL) ? defaultimage : product.ImageURL;
+
+            <li class="product-item">
+                <div class="product-thumb clearfix">
+                    <a href="@Url.Action("Detail","Products",new {ID=product.ID })">
+                        <img src="@ImageURL" alt="image" style="height : 286px; width:250px;object-fit:cover ; object-position:center center">
+                    </a>
+
+                </div>
+                <div class="product-info clearfix">
+                    <span class="product-title">@product.Name</span>
+                    <div class="price">
+                        <ins>
+                            <span class="amount">PKR @product.Price</span>
+                        </ins>
+                    </div>
+                </div>
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <div class="add-to-cart text-center">
+                        <a class="productaddtocart" data-id="@product.ID">ADD TO CART</a>
+                    </div>
+                    <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
+                }
+                else
+                {
+                    <div class="add-to-cart text-center">
+                        <a href="@Url.Action("Login","Account")">LOGIN TO BUY</a>
+                    </div>
+                    <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
+
+                }
+
+            </li>
+
+        }
+
+    </ul><!-- /.product -->
+}
+else
+{  <label class="text-center text-danger col-md-9">No Products Found!!</label>
+}
+</div><!-- /.product-content -->
+
+
+
+@if (Model.Pager != null)
+{
+    <div class="product-pagination text-center clearfix">
+        <ul class="flat-pagination">
+        @if (Model.Pager.CurrentPage > 1)
+    {
+
+            <li class="prev">
+                <a href="@Url.Action("Index","Shop",new {pageNo=Model.Pager.CurrentPage -1,sortBy = Model.sortby, categoryID=Model.CategoryID,Searchterm=Model.SearchTerm  })"><i class="fa fa-angle-left"></i></a>
+            </li>
+         
+
+    }
+            @for (var page = Model.Pager.StartPage; page <= Model.Pager.EndPage; page++)
+            {
+            string activeclass = Model.Pager.CurrentPage == page ? "active bg-info" : string.Empty;
+          
+
+            <li class="@activeclass"><a href="@Url.Action("Index","Shop",new {pageNo=page,sortBy = Model.sortby, categoryID=Model.CategoryID,Searchterm=Model.SearchTerm  })" title="">@page</a></li>
+           
+            }
+            @if (Model.Pager.CurrentPage < Model.Pager.TotalPages)
+            {
+           
+            <li><a href="@Url.Action("Index","Shop",new {pageNo=Model.Pager.CurrentPage+1,sortBy = Model.sortby, categoryID=Model.CategoryID,Searchterm=Model.SearchTerm })"><i class="fa fa-angle-right"></i></a></li>
+       
+
+            }
+
+
+           
+            
+        </ul><!-- /.flat-pagination -->
+    </div>
+   
+
+
+
+   
+
+
+}
+<script>
+
+    var products ;
+
+    $(".productaddtocart").click(function () {
+       
+            var existingcookiedata = $.cookie('cartproduct');
+            if (existingcookiedata != undefined && existingcookiedata != "" && existingcookiedata != null)
+            {
+                products = existingcookiedata.split('-');
+
+            } else
+            {
+                products = [];
+            }
+
+
+            var productID = $(this).attr('data-id')
+        products.push(productID);
+
+        $.cookie('cartproduct', products.join('-'), { path: '/' })
+        updatecartproducts();
+            swal("Done", "Product Added To Cart", "success");
+       
+    });
+
+
+
+</script>

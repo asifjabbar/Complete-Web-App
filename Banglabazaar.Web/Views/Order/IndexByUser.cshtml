@@ -1,0 +1,173 @@
+﻿@using Microsoft.AspNet.Identity.Owin;
+@using Microsoft.AspNet.Identity;
+@model Banglabazaar.Web.HomeViewModel.OrderViewModel
+
+
+<br />
+
+<div class="row">
+    <div class="col-md-12">
+        <div class="title-section">
+            <h2 class="title">
+                ORDER LIST
+            </h2>
+        </div><!-- /.title-section -->
+    </div><!-- /.col-md-12 -->
+</div>
+
+<div class="container">
+    <div id="tablecontainer">
+        <div>
+
+            <form method="post">
+              
+
+
+
+            </form>
+
+        </div>
+        <div>
+            <table class="table table-striped" id="ProductsTable">
+                <thead>
+                    <tr>
+                        <th class="wrap-td font-weight-bold">OrderID</th>
+                        <th class="wrap-td font-weight-bold">Date-Time</th>
+                        <th class="wrap-td font-weight-bold">Total Price</th>
+                        <th class="wrap-td font-weight-bold">Status</th>
+                        <th class="wrap-td font-weight-bold">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    @if (Model.Orders != null)
+                    {
+                        foreach (var Order in Model.Orders)
+                        {
+
+                            <tr>
+                                <td>@Order.UserId</td>
+                                <td>@Order.OrderedAt</td>
+                                <td>
+                                    @Order.TotalAmount
+
+                            </td>
+                            <td>@Order.Status</td>
+                            <td>
+                                <a class="detailbtn" data-id="@Order.ID" href="@Url.Action("DetailByUser","Order",new { ID=Order.ID })">Detail</a>
+
+                        </tr>
+                        }
+
+                    }
+                    else
+                    {
+                        <tr>
+                            <td class="text-danger" colspan="4"> <text>No Orders Found</text></td>
+                        </tr>
+                    }
+
+
+
+
+                </tbody>
+
+
+            </table>
+            @*<div>
+
+
+                @if (Model.Pager != null)
+                {
+
+                    if (Model.Pager.CurrentPage > 1)
+                    {
+                        <a class="pagebutton" data-pageNo="1" href="@Url.Action("Index","Order",new { UserID=Model.UserID, status=Model.Status, pageNo=1 })">First</a>
+                        <a class="pagebutton" data-pageNo="@(Model.Pager.CurrentPage -1)" href="@Url.Action("IndexByUser","Order",new { UserID=Model.UserID, status=Model.Status, pageNo=Model.Pager.CurrentPage - 1 })">Previous</a>
+
+                    }
+
+                    for (var page = Model.Pager.StartPage; page <= Model.Pager.EndPage; page++)
+                    {
+                        string activeclass = Model.Pager.CurrentPage == page ? "active bg-info" : string.Empty;
+                        <a class="@activeclass pagebutton" data-pageNo="@page" href="@Url.Action("IndexByUser","Order",new { UserID=Model.UserID, status=Model.Status, pageNo=page })">@page</a>
+                    }
+
+
+                    if (Model.Pager.CurrentPage < Model.Pager.TotalPages)
+                    {
+                        <a class="pagebutton" data-pageNo="@(Model.Pager.CurrentPage +1)" href="@Url.Action("IndexByUser","Order",new { UserID=Model.UserID, status=Model.Status, pageNo=Model.Pager.CurrentPage+1 })">Next</a>
+                        <a class="pagebutton" data-pageNo="@Model.Pager.EndPage" href="@Url.Action("IndexByUser","Order",new { UserID=Model.UserID, status=Model.Status, pageNo=Model.Pager.EndPage })">Last</a>
+
+                    }
+
+
+
+                }
+
+
+
+            </div>*@
+            <div>
+
+                @if (Model.Pager != null)
+                {
+                    <div class="product-pagination text-center clearfix">
+                        <ul class="flat-pagination">
+                            @if (Model.Pager.CurrentPage > 1)
+                            {
+
+                                <li class="prev">
+                                    <a href="@Url.Action("IndexByUser","Order",new { UserID=Model.UserID, status=Model.Status, pageNo=Model.Pager.CurrentPage - 1 })"><i class="fa fa-angle-left"></i></a>
+                                </li>
+
+
+                            }
+                            @for (var page = Model.Pager.StartPage; page <= Model.Pager.EndPage; page++)
+                            {
+                                string activeclass = Model.Pager.CurrentPage == page ? "active bg-info" : string.Empty;
+
+
+                                <li class="@activeclass"><a href="@Url.Action("IndexByUser","Order",new { UserID=Model.UserID, status=Model.Status, pageNo=page })" title="">@page</a></li>
+
+                            }
+                            @if (Model.Pager.CurrentPage < Model.Pager.TotalPages)
+                            {
+
+                                <li><a href="@Url.Action("IndexByUser","Order",new { UserID=Model.UserID, status=Model.Status, pageNo=Model.Pager.CurrentPage+1 })"><i class="fa fa-angle-right"></i></a></li>
+
+
+                            }
+
+
+
+
+                        </ul><!-- /.flat-pagination -->
+                    </div>
+
+
+
+
+
+
+
+                }
+            </div>
+        </div>
+
+    </div>
+    <hr />
+    <div id="actioncontainer">
+
+    </div>
+</div>
+<script>
+
+    function focusAction(controlToFocus) {
+        $('html, body').animate({
+            scrollTop: $("#" + controlToFocus).offset().top - 100
+        }, 1000);
+
+    }
+
+</script>
+

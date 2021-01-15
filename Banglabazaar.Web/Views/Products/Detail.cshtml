@@ -1,0 +1,179 @@
+﻿@using Banglabazaar.Services;
+@model Banglabazaar.Web.HomeViewModel.Productviewmodel
+
+
+@if (Model != null && Model.Product != null)
+{
+    Configservices config = new Configservices();
+    var defaultimage = "~/Content/noimage.jpg";
+    var ImageURL=string.IsNullOrEmpty(Model.Product.ImageURL) ? defaultimage : Model.Product.ImageURL;
+
+<!-- Page title -->
+<div class="page-title parallax parallax1">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="page-title-heading">
+                    <h1 class="title">@Model.Product.Name</h1>
+                </div><!-- /.page-title-heading -->
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="@Url.Action("Index","Home")">Home</a></li>
+                        <li><a href="@Url.Action("Index","Shop")">Shop</a></li>
+                        <li><a href="#">Products</a></li>
+                    </ul>
+                </div><!-- /.breadcrumbs -->
+            </div><!-- /.col-md-12 -->
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</div><!-- /.page-title -->
+
+<section class="flat-row main-shop shop-detail">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="wrap-flexslider">
+                    <div class="inner">
+                        <div class="flexslider style-1 has-relative">
+                            <ul class="slides">
+                                <li data-thumb="@ImageURL">
+                                    <img src="@ImageURL" alt="Image" style="height : 570px; width:613px;object-fit:cover ; object-position:center center">
+                                    <div class="flat-icon style-1">
+                                        <a href="@ImageURL" class="zoom-popup"><span class="fa fa-search-plus"></span></a>
+                                    </div>
+                                </li>
+                                @*<li data-thumb="images/shop/sh-detail/thumb-detail-02.jpg">
+                                    <img src="images/shop/sh-detail/detail-01.jpg" alt="Image">
+                                    <div class="flat-icon style-1">
+                                        <a href="images/shop/sh-detail/detail-01.jpg" class="zoom-popup"><span class="fa fa-search-plus"></span></a>
+                                    </div>
+                                </li>
+                                <li data-thumb="images/shop/sh-detail/thumb-detail-03.jpg">
+                                    <img src="images/shop/sh-detail/detail-01.jpg" alt="Image">
+                                    <div class="flat-icon style-1">
+                                        <a href="images/shop/sh-detail/detail-01.jpg" class="zoom-popup"><span class="fa fa-search-plus"></span></a>
+                                    </div>
+                                </li>
+                                <li data-thumb="images/shop/sh-detail/thumb-detail-04.jpg">
+                                    <img src="images/shop/sh-detail/detail-01.jpg" alt="Image">
+                                    <div class="flat-icon style-1">
+                                        <a href="images/shop/sh-detail/detail-01.jpg" class="zoom-popup"><span class="fa fa-search-plus"></span></a>
+                                    </div>
+                                </li>*@
+                            </ul>
+                        </div><!-- /.flexslider -->
+                    </div>
+                </div>
+            </div><!-- /.col-md-6 -->
+
+            <div class="col-md-6">
+                <div class="product-detail">
+                    <div class="inner">
+                        <div class="content-detail">
+                            <h2 class="product-title">@Model.Product.Name</h2>
+                            <div class="flat-star style-1">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <i class="fa fa-star-half-o"></i>
+                                <span>(1)</span>
+                            </div>
+                            <p style="text-align:center; padding-right:20px">@Model.Product.Description</p>
+                            <div class="price">
+                              
+                                <ins>
+                                <span class="amount">PKR @Model.Product.Price</span>
+                                </ins>
+                            </div>
+                            
+                           
+                           
+                            <div class="product-quantity">
+                                <div class="quantity">
+                                    @*<input type="text" value="1" name="quantity-number" class="quantity-number">
+                                    <span class="inc quantity-button">+</span>
+                                    <span class="dec quantity-button">-</span>*@
+                                </div>
+                                <div class="add-to-cart text-center">
+                                    @if (User.Identity.IsAuthenticated)
+                                    {
+                                        <a class="productaddtocart" href="#" data-id="@Model.Product.ID">ADD TO CART</a>
+                                    }
+                                    else
+                                    {
+                                        <a href="@Url.Action("Login","Account")">LOGIN TO BUY</a>
+                                    }
+
+
+                                </div>
+                                <div class="box-like">
+                                    <a href="#" class="like"><i class="fa fa-heart-o"></i></a>
+                                </div>
+                            </div>
+                            <div class="product-categories">
+                                <span>Categories: </span><a href="#">@Model.Product.Category.Name</a> 
+                            </div>
+                            <div class="product-tags">
+                                @*<span>Tags: </span><a href="#">Dress,</a> <a href="#">Fashion,</a> <a href="#">Furniture,</a> <a href="#">Lookbok</a>*@
+                            </div>
+                            <ul class="flat-socials">
+                                <li><a href="@config.getconfig("FacebookURL").Value"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div><!-- /.product-detail -->
+            </div>
+        </div><!-- /.row -->
+    </div><!-- /.container -->
+</section><!-- /.flat-row -->
+
+<!-- /.shop-detail-content -->
+
+    <section class="flat-row shop-related">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="title-section margin-bottom-55">
+                        <h2 class="title">Related Products</h2>
+                    </div>
+                    @{Html.RenderAction("Products", "Widgets", new { isLatestProducts = false, CategoryID=Model.Product.Category.ID });  }
+            
+                </div>
+            </div><!-- /.row -->
+        </div>
+    </section>
+}
+<script>
+
+    var products ;
+
+    $(".productaddtocart").click(function () {
+
+            var existingcookiedata = $.cookie('cartproduct');
+            if (existingcookiedata != undefined && existingcookiedata != "" && existingcookiedata != null)
+            {
+                products = existingcookiedata.split('-');
+
+            } else
+            {
+                products = [];
+            }
+
+
+            var productID = $(this).attr('data-id')
+        products.push(productID);
+
+        $.cookie('cartproduct', products.join('-'), { path: '/' })
+        updatecartproducts();
+            swal("Done", "Product Added To Cart", "success");
+
+    });
+
+
+
+</script>

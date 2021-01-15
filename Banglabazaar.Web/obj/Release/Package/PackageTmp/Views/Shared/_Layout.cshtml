@@ -1,0 +1,293 @@
+﻿@using Banglabazaar.Services
+@using Microsoft.AspNet.Identity
+@using Microsoft.AspNet.Identity.Owin
+
+
+
+
+@{ 
+    Configservices service = new Configservices();
+  
+  }
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Basic Page Needs -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'><![endif]-->
+    <title>E-Commerce Bazaar</title>
+
+    
+
+    <!-- Mobile Specific Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+   
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" type="text/css" href="~/Content/stylesheets/bootstrap.css">
+
+    <!-- Theme Style -->
+    <link rel="stylesheet" type="text/css" href="~/Content/stylesheets/style.css">
+    <link rel="stylesheet" type="text/css" href="~/Content/stylesheets/responsive.css">
+
+    <!-- Colors -->
+    <link rel="stylesheet" type="text/css" href="~/Content/stylesheets/colors/color1.css" id="colors">
+
+    <!-- Animation Style -->
+    <link rel="stylesheet" type="text/css" href="~/Content/stylesheets/animate.css">
+   
+
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+   
+    <!-- Favicon and touch icons  -->
+    <link href="~/Content/icon.png" rel="shortcut icon">
+
+    <!--[if lt IE 9]>
+        <script src="~/Content/javascript/html5shiv.js"></script>
+        <script src="~/Content/javascript/respond.min.js"></script>
+    <![endif]-->
+    <script src="~/Content/javascript/jquery.min.js"></script>
+    <script src="~/Content/javascript/jquery-ui.js"></script>
+
+</head>
+<body class="header_sticky header-style-1 has-menu-extra">
+   
+    <!-- Preloader -->
+    <div id="loading-overlay">
+        <div class="loader"></div>
+    </div>
+    <div class="boxed">
+        <div id="site-header-wrap">
+            <!-- Header -->
+            <header id="header" class="header clearfix">
+                <div class="container-fluid clearfix container-width-93" id="site-header-inner">
+                    <div id="logo" class="logo float-left">
+                        <a href="@Url.Action("Index","Home")" title="logo">
+
+                          
+                            <img src="~/Content/Untitled-1 (2).jpg" alt="Logo" width="107" height="24" @*data-retina="~/Content/Untitled-1 (2).jpg"*@ data-width="107" data-height="24">
+                        </a>
+                    </div><!-- /.logo -->
+                    <div class="mobile-button"><span></span></div>
+                    <ul class="menu-extra">
+                       
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                      
+                    }
+                    else
+                    {
+                        <li class="box-login">
+                            Login<a class="icon_login" href="@Url.Action("Login","Account")"></a>
+                        </li>
+                    }
+                   
+                        <li class="box-cart nav-top-cart-wrapper">
+                            <a class="icon_cart nav-cart-trigger active" href="@Url.Action("Checkout","Shop")"><span  id="cartproducts">0</span></a>
+                          
+                        </li>
+                    </ul><!-- /.menu-extra -->
+                    <div class="nav-wrap " >
+                        <nav id="mainnav" class="mainnav">
+                            <ul class="menu">
+                                <li>
+                                    <a href="@Url.Action("Index","Home")">HOME</a>
+                                 
+                                </li>
+                                <li >
+                                    <a href="@Url.Action("Index","Shop")">SHOP</a>
+                                  
+                                </li>
+                                <li>
+                                    <a href="@Url.Action("Checkout", "Shop")">CHECKOUT</a>
+                                    
+                                </li>
+                       
+                                <li>
+                                    <a href="@Url.Action("Contact","Home")">CONTACT</a>
+                                    
+                                </li>
+
+                                <li>
+                                    @if (User.Identity.IsAuthenticated)
+                                    {
+                                        <a href="#">USER PANEL</a>
+                                        <ul class="submenu right-submenu">
+                                           
+                                            @if (User.IsInRole("Admin"))
+                                            {
+                                               
+                                            
+                                            <li><a href="@Url.Action("Index","Products")">Product Section</a></li>
+                                            <li><a href="@Url.Action("Index","Create")">Category Section</a></li>
+                                            <li><a href="@Url.Action("Index","Order")">Order Section</a></li>
+                                            <li><a href="@Url.Action("Configuration","UserControl")">Configuration</a></li>
+                                            <li><a href="@Url.Action("UpdateProfile","UserControl")">Update Profile</a></li>
+                                            <li><a href="@Url.Action("LogOff","Account")">Logout</a></li>
+                                            }
+                                            else
+                                            {
+
+
+                                            <li><a href="@Url.Action("UpdateProfile","UserControl")">Update Profile</a></li>
+                                            <li><a href="@Url.Action("IndexByUser","Order",new {UserID=User.Identity.GetUserId() })">Order List</a></li>
+                                            <li><a href="@Url.Action("LogOff","Account")">Logout</a></li>
+                                            }
+                                        </ul>
+                                    }
+                                    
+                                </li>
+                            </ul>
+                        </nav><!-- /.mainnav -->
+                    </div><!-- /.nav-wrap -->
+                </div><!-- /.container-fluid -->
+            </header><!-- /header -->
+        </div><!-- /.site-header-wrap -->
+        @RenderBody()
+        <section class="flat-row mail-chimp">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="text">
+                            <h3>Subcribe for Newsletter</h3>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="subscribe clearfix">
+                            <form action="#" method="post" accept-charset="utf-8" id="subscribe-form">
+                                <div class="subscribe-content">
+                                    <div class="input">
+                                        <input type="email" name="subscribe-email" placeholder="Your Email">
+                                    </div>
+                                    <div class="button">
+                                        <button type="button">SUBCRIBE</button>
+                                    </div>
+                                </div>
+                            </form>
+                            <ul class="flat-social">
+                                <li><a href="@service.getconfig("FacebookURL").Value"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google"></i></a></li>
+                                <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            </ul><!-- /.flat-social -->
+                        </div><!-- /.subscribe -->
+                    </div>
+                </div>
+            </div>
+        </section><!-- /.mail-chimp -->
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="widget widget-link">
+                            <ul>
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Online Store</a></li>
+                                <li><a href="#">Blog</a></li>
+                                <li><a href="@Url.Action("Contact","Home")">Contact Us</a></li>
+                            </ul>
+                        </div><!-- /.widget -->
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3">
+                        <div class="widget widget-link link-login">
+                            <ul>
+                                <li><a href="@Url.Action("Login","Account")">Login/ Register</a></li>
+                                <li><a href="@Url.Action("Checkout","Shop")">Your Cart</a></li>
+                                <li><a href="#">Wishlist items</a></li>
+                                <li><a href="@Url.Action("Checkout","Shop")">Your checkout</a></li>
+                            </ul>
+                        </div><!-- /.widget -->
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3">
+                        <div class="widget widget-link link-faq">
+                            <ul>
+                                <li><a href="#">FAQs</a></li>
+                                <li><a href="#">Term of service</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                                <li><a href="#">Returns</a></li>
+                            </ul>
+                        </div><!-- /.widget -->
+                    </div><!-- /.col-md-3 -->
+                    <div class="col-md-3">
+                        <div class="widget widget-brand">
+                            <div class="logo logo-footer">
+                                <a href="@Url.Action("Index","Home")"><img src="~/Content/Logo.png" alt="image" width="107" height="24"></a>
+                            </div>
+                            <ul class="flat-contact">
+                                <li class="address">@service.getconfig("CompanyAddress").Value</li>
+                                <li class="phone">@service.getconfig("CompanyPhone").Value</li>
+                                <li class="email">@service.getconfig("CompanyEmail").Value</li>
+                            </ul><!-- /.flat-contact -->
+                        </div><!-- /.widget -->
+                    </div><!-- /.col-md-3 -->
+                </div><!-- /.row -->
+            </div><!-- /.container -->
+        </footer><!-- /.footer -->
+
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="copyright text-center">Copyright 2020 <a href="#">FlyBuy.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Go Top -->
+        <a class="go-top">
+            <i class="fa fa-chevron-up"></i>
+        </a>  
+
+
+    </div>
+    <script>
+       
+  
+    </script>
+    <!-- Javascript -->
+  
+    <script src="~/Content/javascript/tether.min.js"></script>
+    <script src="~/Content/javascript/bootstrap.min.js"></script>
+    <script src="~/Content/javascript/jquery.easing.js"></script>
+    <script src="~/Content/javascript/parallax.js"></script>
+    <script src="~/Content/javascript/jquery-waypoints.js"></script>
+    <script src="~/Content/javascript/jquery-countTo.js"></script>
+    <script src="~/Content/javascript/jquery.countdown.js"></script>
+    <script src="~/Content/javascript/jquery.flexslider-min.js"></script>
+    <script src="~/Content/javascript/images-loaded.js"></script>
+    <script src="~/Content/javascript/jquery.isotope.min.js"></script>
+    <script src="~/Content/javascript/magnific.popup.min.js"></script>
+    <script src="~/Content/javascript/jquery.hoverdir.js"></script>
+    <script src="~/Content/javascript/owl.carousel.min.js"></script>
+    <script src="~/Content/javascript/equalize.min.js"></script>
+ 
+
+    <script src="~/Content/javascript/jquery-ui.js"></script>
+ 
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="~/Content/javascript/jquery.cookie.js"></script>
+    <script src="~/Content/javascript/main.js"></script>
+
+    <!-- Revolution Slider -->
+    <script src="~/Content/rev-slider/js/jquery.themepunch.tools.min.js"></script>
+    <script src="~/Content/rev-slider/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="~/Content/javascript/rev-slider.js"></script>
+    <!-- Load Extensions only on Local File Systems ! The following part can be removed on Server for On Demand Loading -->
+    <script src="~/Content/rev-slider/js/extensions/revolution.extension.actions.min.js"></script>
+    <script src="~/Content/rev-slider/js/extensions/revolution.extension.carousel.min.js"></script>
+    <script src="~/Content/rev-slider/js/extensions/revolution.extension.kenburn.min.js"></script>
+    <script src="~/Content/rev-slider/js/extensions/revolution.extension.layeranimation.min.js"></script>
+    <script src="~/Content/rev-slider/js/extensions/revolution.extension.migration.min.js"></script>
+    <script src="~/Content/rev-slider/js/extensions/revolution.extension.navigation.min.js"></script>
+    <script src="~/Content/rev-slider/js/extensions/revolution.extension.parallax.min.js"></script>
+    <script src="~/Content/rev-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
+    <script src="~/Content/rev-slider/js/extensions/revolution.extension.video.min.js"></script>
+
+</body>
+</html>

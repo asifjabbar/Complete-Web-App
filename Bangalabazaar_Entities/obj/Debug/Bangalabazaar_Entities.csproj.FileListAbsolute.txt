@@ -1,0 +1,13 @@
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Bangalabazaar_Entities\bin\Debug\Bangalabazaar_Entities.dll
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Bangalabazaar_Entities\bin\Debug\Bangalabazaar_Entities.pdb
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Bangalabazaar_Entities\obj\Debug\Bangalabazaar_Entities.dll
+C:\Users\ASIF JABBAR\documents\visual studio 2015\Projects\Bangla_Bazaar\Bangalabazaar_Entities\obj\Debug\Bangalabazaar_Entities.pdb
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Bangalabazaar_Entities\bin\Debug\System.ComponentModel.Annotations.dll
+C:\Users\Asif Jabbar\Documents\Visual Studio 2015\Projects\Bangla_Bazaar\Bangalabazaar_Entities\obj\Debug\Bangalabazaar_Entities.csprojResolveAssemblyReference.cache
+F:\Projects\Bangla_Bazaar\Bangalabazaar_Entities\bin\Debug\Bangalabazaar_Entities.dll
+F:\Projects\Bangla_Bazaar\Bangalabazaar_Entities\bin\Debug\Bangalabazaar_Entities.pdb
+F:\Projects\Bangla_Bazaar\Bangalabazaar_Entities\bin\Debug\System.ComponentModel.Annotations.dll
+F:\Projects\Bangla_Bazaar\Bangalabazaar_Entities\obj\Debug\Bangalabazaar_Entities.csproj.CoreCompileInputs.cache
+F:\Projects\Bangla_Bazaar\Bangalabazaar_Entities\obj\Debug\Bangalabazaar_Entities.csproj.CopyComplete
+F:\Projects\Bangla_Bazaar\Bangalabazaar_Entities\obj\Debug\Bangalabazaar_Entities.dll
+F:\Projects\Bangla_Bazaar\Bangalabazaar_Entities\obj\Debug\Bangalabazaar_Entities.pdb
